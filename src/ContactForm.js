@@ -12,6 +12,7 @@ class ContactForm extends Component {
               <p>Email:</p>
               <p className="inp_txt">bandbadhombres@gmail.com</p>
               <hr/>
+              <p className="inp_txt_credits">Website created by Rodrigo Bazan Danino rbdwebdevelopment@gmail.com Hamburg, Germany</p>
           </div>
           <form className="col-md-6" action="https://formspree.io/rbdwebdevelopment@gmail.com" method="POST">
             <div className="form-group">
