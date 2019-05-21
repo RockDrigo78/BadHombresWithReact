@@ -1,0 +1,14 @@
+.navbar {
+  background-color: black;
+  z-index: 1;
+}
+
+.facebook {
+  height: 30px;  
+  border-radius: 10px;
+}
+
+.instagram {
+  height: 30px;
+  border-radius: 10px;
+}
