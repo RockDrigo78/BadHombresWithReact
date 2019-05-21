@@ -1,11 +1,8 @@
 html {
-  background-color: #000;
+  background-color: black;
   background-image: url(./images/Logo/badHombresLogo.jpg);
   background-size:50%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: rgb(156, 156, 156);
-  font-family: 'Rock Salt', cursive;
 }
-

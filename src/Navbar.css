@@ -1,14 +1,25 @@
 .navbar {
   background-color: black;
   z-index: 1;
+  height: 75px;
+}
+
+.navbar-nav {
+  background-color: black;
 }
 
 .facebook {
   height: 30px;  
   border-radius: 10px;
+  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.3);
 }
 
 .instagram {
   height: 30px;
   border-radius: 10px;
+  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.3);
+}
+
+.facebook:hover, .instagram:hover {
+  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.5);
 }

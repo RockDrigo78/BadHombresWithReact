@@ -1,0 +1,25 @@
+.ContactForm {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(156, 156, 156);
+  width: 80%;
+  margin-top: 75px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  position: absolute;
+}
+
+.inp_txt {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  background: rgb(156, 156, 156);
+}

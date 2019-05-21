@@ -1,0 +1,21 @@
+.ShowsList {
+  margin-top: 75px;
+  position: absolute;
+}
+
+.ShowsList img{
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+  box-shadow: 10px 9px 5px -3px rgba(255,255,255,0.3);
+}
+
+.ShowsList img:hover {
+  box-shadow: 10px 9px 5px -3px rgba(255,255,255,0.5);
+}
+
+.ShowsList .link {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+}
