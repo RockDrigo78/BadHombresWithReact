@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Routes from './Routes';
+import 'video-react/dist/video-react.css';
 
 class App extends Component {
 
@@ -53,9 +54,13 @@ class App extends Component {
       "51052028_518218075331377_2014861088033603584_n.jpg",
       "51805267_526095994543585_7193322256540368896_n.jpg"
     ],
-    videos: [
+    videosYoutube: [
       "https://www.youtube.com/embed/3uHsfjChVGY",
       "https://www.youtube.com/embed/ejj3yx_lN3A"
+    ],
+    videos: [
+      "bad_hombres_01.mp4",
+      "VIDEO-2019-05-08-23-36-41.mp4"
     ]
   }
   
@@ -64,7 +69,7 @@ class App extends Component {
     return (
         <div className="App">
           <Navbar />
-          <Routes photos={this.props.photos} shows={this.props.shows} videos={this.props.videos}/>
+          <Routes photos={this.props.photos} shows={this.props.shows} videosYoutube={this.props.videosYoutube} videos={this.props.videos}/>
         </div>
     );
   }

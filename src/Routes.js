@@ -33,7 +33,7 @@ class Routes extends Component {
         <Route exact path="/shows/:name" render={getShow} />
         <Route exact path="/photos" render={()=><PhotosList photos={this.props.photos}/>}/>        
         <Route exact path="/photos/:name" render={getPhoto} />
-        <Route exact path="/videos" render={()=><VideosList videos={this.props.videos}/>}/>
+        <Route exact path="/videos" render={()=><VideosList videosYoutube={this.props.videosYoutube} videos={this.props.videos}/>}/>
         <Route exact path="/contact" render={()=><ContactForm />}/>
         <Redirect to="/"/>
       </Switch>
