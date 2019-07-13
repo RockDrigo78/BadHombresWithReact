@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import './ShowsList.css'
+import './ShowsList.css';
 
-
-class ShowsList extends Component {
-
-  render() {   
+function ShowsList(props){
     return (
     <div className="ShowsList">
         <div className="row">
-          {this.props.shows.map(d => (
+          {props.shows.map(d => (
             <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={d}>            
               <Link className="link" to={`shows/${d}`}>
                 <img src={`/images/Shows/${d}`} alt="foto"/>
@@ -19,7 +16,6 @@ class ShowsList extends Component {
         </div>
     </div>
   );
-}
 }
 
 export default ShowsList;
