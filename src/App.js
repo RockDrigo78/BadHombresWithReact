@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Routes from './Routes';
-import 'video-react/dist/video-react.css';
 
 class App extends Component {
 
@@ -54,13 +53,29 @@ class App extends Component {
       "51052028_518218075331377_2014861088033603584_n.jpg",
       "51805267_526095994543585_7193322256540368896_n.jpg"
     ],
-    videosYoutube: [
-      "https://www.youtube.com/embed/3uHsfjChVGY",
-      "https://www.youtube.com/embed/ejj3yx_lN3A"
-    ],
     videos: [
-      "bad_hombres_01.mp4",
-      "VIDEO-2019-05-08-23-36-41.mp4"
+      "325144198419664",
+      "324994621458778",
+      "371626553588127",
+      "665467160516302",
+      "426949527836334",
+      "316225542289525",
+      "304016770195764",
+      "422488301571022",
+      "409423572877495",
+      "407592239727295",
+      "361251331028053",
+      "359081411245045",
+      "355168864969633",
+      "334924930327360",
+      "325204974632689",
+      "311786655974521",
+      "301676176985569",
+      "263403507479503",
+      "240608649758989",
+      "240589776427543",
+      "239232599896594",
+      "238836999936154"
     ]
   }
   
@@ -69,7 +84,7 @@ class App extends Component {
     return (
         <div className="App">
           <Navbar />
-          <Routes photos={this.props.photos} shows={this.props.shows} videosYoutube={this.props.videosYoutube} videos={this.props.videos}/>
+          <Routes photos={this.props.photos} shows={this.props.shows} videos={this.props.videos}/>
         </div>
     );
   }

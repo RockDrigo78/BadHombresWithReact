@@ -23,7 +23,7 @@ function Navbar(){
         </div>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div className="navbar-nav">         
-          <p className="nav-item nav-link">
+          <p className="followText">
             Follow us on:
           </p>
           <a className="nav-item nav-link" href="https://www.facebook.com/somebadhombres" target="_blank" rel="noopener noreferrer">

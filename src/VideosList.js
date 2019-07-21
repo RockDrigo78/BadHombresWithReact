@@ -1,23 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './VideosList.css';
-
-function VideosList(props){
-
-  return (
-  <div className="container VideosList">
-    <div className="row text-center text-lg-left">    
-      {props.videosYoutube.map((video, id) => (
-        <div key={id} className="youtubeVideo col-lg-4 col-md-6 col-sm-12">
-          <li className="VideoBox d-block mb-4 h-100">
-            <iframe title={id} className="Video img-fluid img-thumbnail" src={video} frameBorder="0" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-            </iframe>
-          </li>
-        </div>
-      ))}
-    </div>  
-  </div>
-  );
+ 
+function VideosList(props) {
+    return (
+      <div className="VideosList">
+        <div className="row">    
+          {props.videos.map((video, id) => (
+            <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={id}>
+              <Link className="link" to={`videos/${id}`}>
+                <img src={`https://graph.facebook.com/${video}/picture`} alt="videoThumbnail"/>    
+                <p className="playButton"></p>            
+              </Link>
+            </div>
+          ))}
+        </div>  
+      </div>
+    );  
 }
 
 export default VideosList;

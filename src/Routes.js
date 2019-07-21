@@ -6,6 +6,7 @@ import ShowDetails from './ShowDetails';
 import PhotosList from './PhotosList';
 import PhotoDetails from './PhotoDetails';
 import VideosList from './VideosList';
+import VideoDetails from './VideoDetails';
 import ContactForm from './ContactForm';
 
 class Routes extends Component {
@@ -26,6 +27,12 @@ class Routes extends Component {
       return <PhotoDetails {...props} photo={currentPhoto} />;
     };
 
+    const getVideo = props => {
+      let name = props.match.params.name;
+      let currentVideo = this.props.videos[name];
+      return <VideoDetails {...props} video={currentVideo} />;
+    };
+
     return (
       <Switch>
         <Route exact path="/" render={()=><HomePage />}/>
@@ -33,7 +40,8 @@ class Routes extends Component {
         <Route exact path="/shows/:name" render={getShow} />
         <Route exact path="/photos" render={()=><PhotosList photos={this.props.photos}/>}/>        
         <Route exact path="/photos/:name" render={getPhoto} />
-        <Route exact path="/videos" render={()=><VideosList videosYoutube={this.props.videosYoutube} videos={this.props.videos}/>}/>
+        <Route exact path="/videos" render={()=><VideosList videos={this.props.videos}/>}/>        
+        <Route exact path="/videos/:name" render={getVideo} />
         <Route exact path="/contact" render={()=><ContactForm />}/>
         <Redirect to="/"/>
       </Switch>

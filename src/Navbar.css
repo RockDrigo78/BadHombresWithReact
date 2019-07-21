@@ -8,6 +8,11 @@
   background-color: black;
 }
 
+.followText {
+  margin-top: 12px;
+  height: 30px;  
+}
+
 .facebook {
   height: 30px;  
   border-radius: 10px;
