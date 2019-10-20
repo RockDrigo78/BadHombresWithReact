@@ -14,10 +14,10 @@ function Navbar(){
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav" data-target="#navbarNavAltMarkup" data-toggle="collapse">
-            <Link className="nav-item nav-link" to="/shows">Shows</Link>
-            <Link className="nav-item nav-link" to="/photos">Photos</Link>
-            <Link className="nav-item nav-link" to="/videos">Videos</Link>
-            <Link className="nav-item nav-link" to="/contact">Contact</Link>
+            <Link className="nav-item nav-link item" to="/shows">Shows</Link>
+            <Link className="nav-item nav-link item" to="/photos">Photos</Link>
+            <Link className="nav-item nav-link item" to="/videos">Videos</Link>
+            <Link className="nav-item nav-link item" to="/contact">Contact</Link>
             {/* <Link exact className="nav-item nav-link" to="/aboutus">About Us</Link> */}
           </div>
         </div>

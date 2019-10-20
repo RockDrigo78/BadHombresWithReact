@@ -8,21 +8,21 @@
   background-color: black;
 }
 
+.item {
+  margin-left: 20px;
+}
+
 .followText {
-  margin-top: 12px;
-  height: 30px;  
-}
-
-.facebook {
-  height: 30px;  
-  border-radius: 10px;
-  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.3);
-}
-
-.instagram {
+  margin-top: 25px;
+  margin-left: 20px;
   height: 30px;
+}
+
+.facebook, .instagram {
+  height: 30px;  
+  margin-left: 20px;
+  margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.3);
 }
 
 .facebook:hover, .instagram:hover {
