@@ -1,28 +1,28 @@
 import React from 'react';
-import './VideoDetails.css';
-import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
+import './VideoDetails.css';
 
 function VideoDetails(props){
   
   let {video} = props;
 
   return (    
-      <div className="container">
-        <div className="videoWrapper">
+      <div className="video-container"> 
+      <div className="button container-item">
+        <Link className="btn btn-dark" to="/videos">Go Back</Link>
+      </div>
+        <div className="player-wrapper container-item">
             <ReactPlayer 
-              className="player"
+              className="react-player"
               url={`https://www.facebook.com/somebadhombres/videos/${video}/`} 
-              width={"80vh"}    
-              height={"auto"}   
-              controls       
+              controls   
+              width='100%'
+              height='100%'    
               volume={0.2}
               playing={"true"}                   
-            />           
-          <div className="button">
-            <Link className="btn btn-dark" to="/videos">Go Back</Link>
-          </div>
-        </div>
+            />
+        </div> 
       </div>
   );
 }

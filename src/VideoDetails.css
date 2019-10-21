@@ -1,14 +1,22 @@
-.container {
-  display: block;
-  margin-top: 100px;
+.video-container {
+  position: relative;
+  margin-top: 75px;
 }
 
-.videoWrapper {
-  margin: auto;
-  height: auto;
-  width: 80vh;
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.react-player {
+  position: absolute;
+  top: 50px;
+  left: 0;
 }
 
 .button {
-  margin-top: 20px;
+  position: absolute;
+  right: 20px;
+  margin-bottom: 25px;
+  z-index: 10;
 }
