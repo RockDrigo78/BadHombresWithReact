@@ -1,8 +1,15 @@
 .PhotoDetails {
   display: flex;
-  top: 50px;
+  top: 80px;
   justify-content: center;
   align-items: center;
   height: 80%;
   position: relative;
+}
+
+.button {
+  top: -70px;
+  position: absolute;
+  right: 20px;
+  margin-bottom: 25px;
 }
