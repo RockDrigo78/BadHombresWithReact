@@ -14,8 +14,9 @@
   left: 0;
 }
 
-.button {
+.button-video {
   position: absolute;
+  top: 0;
   right: 20px;
   margin-bottom: 25px;
   z-index: 10;

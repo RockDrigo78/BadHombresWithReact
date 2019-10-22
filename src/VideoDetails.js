@@ -9,7 +9,7 @@ function VideoDetails(props){
 
   return (    
       <div className="video-container"> 
-      <div className="button container-item">
+      <div className="button-video container-item">
         <Link className="btn btn-dark" to="/videos">Go Back</Link>
       </div>
         <div className="player-wrapper container-item">
