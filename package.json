@@ -25,14 +25,18 @@
     "uuid": "^3.4.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "backup-for-deploy": {
     "start1": "react-scripts start",
     "start2": "node server.js"
+  },
+  "backup for deploy": {
+    "start-for-deploy": "node server.js",
+    "start-for-develop": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
