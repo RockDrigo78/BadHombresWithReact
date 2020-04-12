@@ -11,7 +11,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
@@ -19,6 +19,7 @@
     "react-player": "^1.15.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
+    "reactstrap": "^8.4.1",
     "redux": "^4.0.5",
     "serve": "^11.3.0",
     "uuid": "^3.4.0"
@@ -28,6 +29,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "backup-for-deploy": {
+    "start1": "react-scripts start",
+    "start2": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
