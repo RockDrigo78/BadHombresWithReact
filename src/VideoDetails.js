@@ -15,7 +15,7 @@ function VideoDetails(props){
         <div className="player-wrapper container-item">
             <ReactPlayer 
               className="react-player"
-              url={`https://www.facebook.com/somebadhombres/videos/${video}/`} 
+              url={`https://youtu.be/${video}/`} 
               controls   
               width='100%'
               height='100%'    

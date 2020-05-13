@@ -9,7 +9,7 @@ function VideosList(props) {
           {props.videos.map((video, id) => (
             <div className="col-lg-3 col-md-4 col-sm-6 text-center" key={id}>
               <Link className="link" to={`videos/${id}`}>
-                <img src={`https://graph.facebook.com/${video}/picture`} alt="videoThumbnail"/>    
+                <img src={`http://img.youtube.com/vi/${video}/0.jpg`} alt="videoThumbnail"/>
                 <p className="playButton"></p>            
               </Link>
             </div>
