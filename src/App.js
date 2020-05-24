@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Navbar';
+import NavbarMain from './NavbarMain';
 import Routes from './Routes';
 
 class App extends Component {
@@ -62,7 +62,7 @@ class App extends Component {
   
     return (
         <div className="App">
-          <Navbar />
+          <NavbarMain />
           <Routes photos={this.props.photos} shows={this.props.shows} videos={this.props.videos}/>
         </div>
     );
