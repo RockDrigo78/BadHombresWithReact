@@ -1,0 +1,97 @@
+.NavbarMain {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav-item:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.NavbarMain .nav-link {
+  color: rgb(156, 156, 156);
+  display: inline-flex;
+}
+
+.fa-bars {
+  color: rgb(156, 156, 156);
+  font-size: 25px;
+}
+
+/* .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+} */
+
+@media only screen and (max-width: 600px) {
+  /* Extra small devices (phones, 600px and down) */
+  .NavbarMain .logo {
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  .NavbarMain .logo {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Medium devices (landscape tablets, 768px and up) */
+  .NavbarMain .logo {
+    height: 50px;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: unset;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+  .NavbarMain .logo {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  .NavbarMain .logo {
+    height: 60px;
+  }
+}
+
+.NavbarMain-social {
+  display: flex;
+  align-items: center;
+
+}
+
+.facebook, .instagram {
+  color: rgb(156, 156, 156);
+  font-size: 30px;  
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.facebook:hover, .instagram:hover {
+  box-shadow: 4px 4px 5px 0 rgba(255,255,255,0.5);
+}
