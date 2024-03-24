@@ -17,12 +17,14 @@ import {
 } from "reactstrap";
 import "./NavbarMain.css";
 
-const NavbarMain = (props) => {
+const NavbarMain = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
-  const noToggle = () => {return};
+  const noToggle = () => {
+    return;
+  };
 
   return (
     <div className="NavbarMain">
